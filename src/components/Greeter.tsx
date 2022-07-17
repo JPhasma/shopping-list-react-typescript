@@ -1,6 +1,10 @@
 import React from 'react';
 
-function Greeter(props: { person: string }): JSX.Element {
+interface GreeterProps {
+  person: string;
+}
+
+function Greeter(props: GreeterProps): JSX.Element {
   return <div>Hello, {props.person}</div>;
 }
 
