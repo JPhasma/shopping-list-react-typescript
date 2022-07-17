@@ -1,5 +1,6 @@
 import React from 'react';
 import Greeter from './components/Greeter';
+import ShoppingList from './components/ShoppingList';
 
 import './App.css';
 
@@ -10,6 +11,7 @@ function App() {
       <Greeter person='Darius' />
       <Greeter person='Crixus' />
       <Greeter person='Ilithyia' />
+      <ShoppingList />
     </div>
   );
 }
