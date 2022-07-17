@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Greeter from './components/Greeter';
 import ShoppingList from './components/ShoppingList';
+
+import Item from './models/item';
 
 import './App.css';
 
 function App() {
-  const items = [
-    { id: 1, productName: 'Lemon', quantity: 3 },
-    { id: 2, productName: 'Vegan Beef Pasties', quantity: 30 },
-  ];
+  const [items, setItems] = useState<Item[]>([]);
+  // const items = [
+  //   { id: 1, productName: 'Lemon', quantity: 3 },
+  //   { id: 2, productName: 'Vegan Beef Pasties', quantity: 30 },
+  // ];
 
   return (
     <div className='App'>
